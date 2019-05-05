@@ -1,0 +1,68 @@
+<template name="addSubjectEnt">
+    <div class="container">
+        <form id="addsubjectEntform">
+            <h1>Добавление вхождения предмета в расписание</h1>
+            <div class="form-group">
+                <label for="subject">Предмет</label>
+                <select class="form-control" id="subject">
+                    {{#each subjects}}
+                        <option value="{{_id}}">{{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="teacher">Преподаватель</label>
+                <select class="form-control" id="teacher">
+                    {{#each teachers}}
+                        <option value="{{_id}}">{{surname}} {{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="room">Аудитория</label>
+                <select class="form-control" id="room">
+                    {{#each rooms}}
+                        <option value="{{_id}}">{{number}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="group">Группа</label>
+                <select class="form-control" id="group">
+                    {{#each groups}}
+                        <option value="{{_id}}">{{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="times">Время начала</label>
+                <input type="time" class="form-control" id="times" placeholder="9:40">
+            </div>
+            <div class="form-group">
+                <label for="type">Тип</label>
+                <select class="form-control" id="type">
+                    <option value="lecture">Лекция</option>
+                    <option value="practice">Практика</option>
+                    <option value="lab">Лабораторная</option>
+                    <option value="cons">Консультация</option>
+                    <option value="exz">Экзамен</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dayOfWeek">День недели</label>
+                <option value="1">Понедельник</option>
+                <option value="2">Вторник</option>
+                <option value="3">Среда</option>
+                <option value="4">Четверг</option>
+                <option value="5">Пятница</option>
+                <option value="6">Суббота</option>
+            </div>
+            <div class="form-group">
+                <label for="weekNumber">Номер недели</label>
+                <option value="1">Первая</option>
+                <option value="2">Вторая</option>
+            </div>
+            <input type="submit" class="btn btn-default" value="Добавить">
+        </form>
+    </div>
+</template>

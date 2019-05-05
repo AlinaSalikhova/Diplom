@@ -1,0 +1,28 @@
+<template name="addRoom">
+    <div class="container">
+        <form>
+            <h1>Добавление аудитории</h1>
+            <div class="form-group">
+                <label for="number">Номер</label>
+                <input type="number" class="form-control" id="number" placeholder="105">
+            </div>
+            <div class="form-group">
+                <label for="place">Расположение</label>
+                <input type="text" class="form-control" id="place" placeholder="Корпус Г">
+            </div>
+            <div class="form-group">
+                <label for="doesHaveComp">Наличие компьютеров</label>
+                <input type="text" class="form-control" id="doesHaveComp" placeholder="Да">
+            </div>
+            <div class="form-group">
+                <label for="doesHaveProj">Наличие проектора</label>
+                <input type="text" class="form-control" id="doesHaveProj" placeholder="Да">
+            </div>
+            <div class="form-group">
+                <label for="numberOfSeats">Количество мест</label>
+                <input type="number" class="form-control" id="numberOfSeats" placeholder="30">
+            </div>
+            <input type="submit" class="btn btn-default" value="Добавить">
+        </form>
+    </div>
+</template>

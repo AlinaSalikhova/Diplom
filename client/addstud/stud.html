@@ -1,0 +1,45 @@
+<template name="addStudent">
+    <div class="container">
+        <form id="addstudentform">
+            <h1>Добавление студента</h1>
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" class="form-control" id="name" placeholder="Иван">
+            </div>
+            <div class="form-group">
+                <label for="surname">Фамилия</label>
+                <input type="text" class="form-control" id="surname" placeholder="Иванов">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Отчество</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Иванович">
+            </div>
+            <div class="form-group">
+                <label for="numstud">Номер студака</label>
+                <input type="text" class="form-control" id="numstud" placeholder="фпмм-301">
+            </div>
+            <div class="form-group">
+                <label for="numzach">Номер зачетки</label>
+                <input type="text" class="form-control" id="numzach" placeholder="фпмм-301">
+            </div>
+            <div class="form-group">
+                <label for="phone">Номер телефона</label>
+                <input type="text" class="form-control" id="phone" placeholder="89123456789">
+            </div>
+            <div class="form-group">
+                <label for="contacts">Контакты</label>
+                <input type="text" class="form-control" id="contacts" placeholder="Введите ссылки через запятую">
+            </div>
+            <div class="form-group">
+                <label for="group">Группа</label>
+                <select class="form-control" id="group">
+                    {{#each groups}}
+                        <option value="{{_id}}">{{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <input type="submit" class="btn btn-default" value="Добавить">
+        </form>
+
+    </div>
+</template>

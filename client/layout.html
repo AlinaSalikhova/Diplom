@@ -1,0 +1,38 @@
+<template name="mainLayout">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="">Добавление</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/addteach/">Преподаватель</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/addstud/">Студент</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/addgroup/">Группа</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/addsubj/">Предмет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/addRooms/">Аудитория</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/addSubjectEntities/">Вхождение предмета в расписание</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row col-6 align-content-center">
+        {{>yield}}
+        </div>
+    </div>
+
+</template>
